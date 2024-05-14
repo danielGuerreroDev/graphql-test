@@ -1,6 +1,8 @@
+import flowbite from "flowbite-react/tailwind";
+
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}", flowbite.content()],
   theme: {
     extend: {},
     colors: {
@@ -24,5 +26,5 @@ export default {
       "gender-anonymous": "#c69a91",
     },
   },
-  plugins: [],
+  plugins: [flowbite.plugin()],
 };
